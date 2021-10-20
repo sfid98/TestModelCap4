@@ -74,7 +74,7 @@ for filename in sorted(os.listdir('./test/')):
 
     image=cv2.imread(path)
     image_grey=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-    faces = FACE_CASCADE.detectMultiScale(image_grey,scaleFactor=1.16,minNeighbors=5,minSize=(25,25),flags=0)
+    faces = FACE_CASCADE.detectMultiScale(image_grey,scaleFactor=1.3,minNeighbors=5,minSize=(25,25),flags=0)
     if len(faces) == 0:
         FN = FN + 1
         
